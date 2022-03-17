@@ -16,8 +16,8 @@ const LatestArticles = () => {
 
     return (
         <>
-            <p className='TrendingTitle'>Latest Articles</p>
-            <hr className='LineBreak' />
+            <p className='TrendingTitle mobilelatestT'>Latest Articles</p>
+            <hr className='LineBreak mobilelatestL' />
 
                 <div>
                     {rows.filter((value) => (load ? (value.ID <= 3) : (value.ID <= 4)) && value.Category === "Bollywood").map((val) => (
@@ -29,7 +29,7 @@ const LatestArticles = () => {
                                     <img src={val.Image} className='LatestArticlesImage' alt='' />
                                     <div className='blogContent'>
                                         <p style={{textAlign:"center"}} className='blogTitle'>{val.Title}</p>
-                                        <p className='blogDetail'>{val.Body}</p>
+                                        <p className='blogDetail mobilelatestBody'>{val.Body}</p>
                                         <p className='blogCategoryMain'>{val.Category}</p>
                                     </div>
                                 </div>

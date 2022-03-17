@@ -18,7 +18,7 @@ const MoreComp = () => {
 
                     <Link to={`/article/${val.Category}/${val.ID}`} className='TheLatestContent'>
                         <p style={{textAlign:"center"}}className='blogTitle'>Related reads</p>
-                        <img src={val.Image} className='TheLatestImg' alt='' />
+                        <img src={val.Image} className='TheLatestImg mobileLatestImg' alt='' />
                         <p style={{textAlign:"center"}}className='blogTitle'>{val.Title}</p>
 
                         

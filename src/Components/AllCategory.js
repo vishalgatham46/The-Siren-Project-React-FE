@@ -16,17 +16,17 @@ const AllCategory = () => {
     const [load, setLoad] = useState(true)
 
     return (
-        <div className='blogarea'>
+        <div className='blogarea mobileBlogArea'>
             <div>
                 <p className='categoryTitle'>{cat}</p>
                 <hr className='categoryUL' />
 
                 {rows.filter((value) => (load ? (value.ID <= 4) : (value.ID <= 6)) && value.Category === cat).map((val) => (
 
-                    <div className='MainCategoryContainer'>
+                    <div className='MainCategoryContainer mobileCategoryContainer'>
                         <Link to={`/article/${val.Category}/${val.ID}`}>
 
-                            <div className='blogElements'>
+                            <div className='blogElements mobileBlogElements'>
                                 <img src={val.Image} className='blogImage' alt='' />
                                 <div className='blogContent'>
                                     <p className='blogTitle'>{val.Title}</p>

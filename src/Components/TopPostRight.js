@@ -23,7 +23,7 @@ const TopPostRight = () => {
                         <Link to={`/article/${val.Category}/${val.ID}`}>
 
                             <div className='LatestArticle'>
-                                <img src={val.Image} className='TopPostImg' alt=''/>
+                                <img src={val.Image} className='TopPostImg MobileToppostImg' alt=''/>
                                 <div className='titlearea'>
                                     <div >
                                         <p className='blogTitle'>{val.Title}</p>
@@ -42,7 +42,7 @@ const TopPostRight = () => {
                     <div>
                         <Link to={`/article/${val.Category}/${val.ID}`}>
 
-                            <div className='BelowContainer'>
+                            <div className='BelowContainer mobileBelow'>
                                 <img src={val.Image} className='SmallImages' alt=''/>
                                 <div className='TopPostDetails'>
                                     <p className='blogTitle'>{val.Title}</p>

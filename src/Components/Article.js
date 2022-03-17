@@ -17,7 +17,7 @@ const Article = () => {
     return (
         <div>
             {rows.filter((value) => (value.ID === Id && value.Category === cat)).map((val) => (
-                <div className='articleContainer'>
+                <div className='articleContainer mobilearticleContainer'>
                     <p className='articleTitle'>{val.Title}</p>
                     <div className='articleProfileBox'>
                         <img src='https://cdn2.vectorstock.com/i/1000x1000/44/66/avatar-man-with-colorful-clothes-graphic-vector-9374466.jpg' alt='' className='articleProfileImg' />
@@ -27,7 +27,7 @@ const Article = () => {
                         </div>
                         
                     </div>
-                    <img src={val.Image} alt='' className='articleImg' />
+                    <img src={val.Image} alt='' className='articleImg mobilearticleImg' />
                     <p>{val.Body}{val.Body}</p>
                     <p><AiFillLike />  <b>5k Likes</b></p>
                     <hr />
